@@ -1,4 +1,12 @@
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || (event.ctrlKey && event.key === "U")) {
+    event.preventDefault();
+  }
+});
+
+document.addEventListener('contextmenu', (event) => event.preventDefault());
+
 
 const searchSvg = document.getElementById('searchSvg');
 const searchInput = document.getElementById('searchInput');
